@@ -12,7 +12,7 @@ Fruit Ninja influenced game! I chose to make this game because fruit ninja is on
 * There will be a total of 5 - 10 objects on the screen, GOOD LUCK!
 
 ### Wireframe
-(Game Overview)(/aww-board.png)
+! (Game Overview)(/aww-board.png)
 
 
 *When I move my cursor through an object, the object should slice in half, gaining me a single point.
