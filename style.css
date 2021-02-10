@@ -12,7 +12,7 @@
 }
 
 #Sprite1 {
-    animation: Sprite 50s ;
+    animation: Sprite 10s ;
 }
 
 @keyframes Sprite {
@@ -37,6 +37,37 @@
 
 }
 
+#Sprite2 {
+    animation: 10s;
+}
+
+@keyframes Annamae {
+    from {
+        transform:  translate(40px);
+        opacity: 0;
+    }
+    25% {
+        opacity: 100%;
+    }
+    50% {
+        transform:  rotate(100deg);
+    }
+    75% {
+        transform:  rotate(-2deg);
+        transform: translate(500px, 50%);
+        rotate: (260turn);
+    }
+    to {
+        transform:  rotate(0deg);
+    }
+
+}
+
+
+
+
+
+
 .disappear {
     display: none;
 }
@@ -57,8 +88,9 @@
 }
 
 .header button {
-    vertical-align: bottom;
-    color: solid black;
+    position: absolute;
+    top: 8px;
+    right: 16px;
 }
 
 
