@@ -1,3 +1,10 @@
+@font-face {
+    src:url(font/Road_Rage.otf);
+    font-family: rage;
+}
+
+
+
 .header img {
     align-items: center;
     background-size: cover;
@@ -108,7 +115,7 @@
     justify-content:center;
     flex-direction: column;
     font-size: 75px;
-
+    font-family: rage;
 }
 
 .header button {
