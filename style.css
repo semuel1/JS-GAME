@@ -19,7 +19,11 @@
 }
 
 #Sprite1 {
-    animation: Sprite 10s ;
+    animation: Sprite 10s;
+}
+
+.myStyle {
+    display: none;
 }
 
 @keyframes Sprite {
@@ -46,7 +50,7 @@
 
 #Sprite2 {
     animation: Annamae 10s;
-}
+} 
 
 @keyframes Annamae {
     from {
@@ -68,7 +72,7 @@
         transform:  rotate(120px);
     }
 
-}
+} 
 
 #Sprite3 {
     animation: Marry-o 10s;
