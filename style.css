@@ -1,106 +1,7 @@
 @font-face {
     src:url(font/Road_Rage.otf);
     font-family: rage;
-}
-
-
-
-.header img {
-    align-items: center;
-    background-size: cover;
-    height: 78vh;
-    width: 78vw;
-    background-position:top;
-    border-radius: 20PX;
-    border-left: 20px solid darkmagenta;
-    border-right: 20px solid darkmagenta;
-    border-top: 30px solid purple;
-    border-bottom: 30px solid purple;
-}
-
-#Sprite1 {
-    animation: Sprite 10s;
-}
-
-.myStyle {
-    display: none;
-}
-
-@keyframes Sprite {
-    from {
-        transform:  rotate(-2deg);
-        opacity: 0;
-    }
-    25% {
-        opacity: 100%;
-    }
-    50% {
-        transform:  rotate(100deg);
-    }
-    75% {
-        transform:  rotate(-2deg);
-        transform: translate(500px, 50%);
-        rotate: (260turn);
-    }
-    to {
-        transform:  rotate(0deg);
-    }
-
-}
-
-#Sprite2 {
-    animation: Annamae 10s;
-} 
-
-@keyframes Annamae {
-    from {
-        transform:  translate(344px);
-        opacity: 0;
-    }
-    25% {
-        opacity: 100%;
-    }
-    50% {
-        transform:  rotate(150deg);
-    }
-    75% {
-        transform:  rotate(2deg);
-        transform: translate(50px, 50%);
-        rotate: (-260turn);
-    }
-    to {
-        transform:  rotate(120px);
-    }
-
-} 
-
-#Sprite3 {
-    animation: Marry-o 10s;
-}
-
-@keyframes Marry-o {
-    from {
-        transform:  translate(32px);
-        opacity: 0;
-    }
-    25% {
-        opacity: 100%;
-    }
-    50% {
-        transform:  rotate(67deg);
-    }
-    75% {
-        transform:  rotate(2deg);
-        transform: translate(250px, 50%);
-        rotate: (-260turn);
-    }
-    to {
-        transform:  rotate(120px);
-    }
-
-}
-
-
+}    
 
 
 .disappear {
@@ -137,4 +38,112 @@
     height: 70px;
     font-size: 4rem;
 }
+
+.header img {
+    align-items: center;
+    background-size: cover;
+    height: 78vh;
+    width: 78vw;
+    background-position:top;
+    border-radius: 20PX;
+    border-left: 20px solid darkmagenta;
+    border-right: 20px solid darkmagenta;
+    border-top: 30px solid purple;
+    border-bottom: 30px solid purple;
+}   
+
+#GameOver {
+    display: none;
+    width: 50px;
+}
+
+.GamePieces {
+    border: 5px solid blue;
+}
+
+#Sprite1 {
+    animation: Sprite 10s;
+
+}    
+
+.myStyle {
+    display: none;
+}    
+
+@keyframes Sprite {
+    from {
+        transform:  rotate(-2deg);
+        opacity: 0;
+    }    
+    25% {
+        opacity: 100%;
+    }    
+    50% {
+        transform:  rotate(100deg);
+    }    
+    75% {
+        transform:  rotate(-2deg);
+        transform: translate(500px, 50%);
+        rotate: (260turn);
+    }    
+    to {
+        transform:  rotate(0deg);
+    }    
+
+}    
+
+#Sprite2 {
+    animation: Annamae 10s;
+}     
+
+@keyframes Annamae {
+    from {
+        transform:  translate(344px);
+        opacity: 0;
+    }    
+    25% {
+        opacity: 100%;
+    }    
+    50% {
+        transform:  rotate(150deg);
+    }    
+    75% {
+        transform:  rotate(2deg);
+        transform: translate(50px, 50%);
+        rotate: (-260turn);
+    }    
+    to {
+        transform:  rotate(120px);
+    }    
+
+}     
+
+#Sprite3 {
+    animation: Marry-o 10s;
+}    
+
+@keyframes Marry-o {
+    from {
+        transform:  translate(32px);
+        opacity: 0;
+    }    
+    25% {
+        opacity: 100%;
+    }    
+    50% {
+        transform:  rotate(67deg);
+    }    
+    75% {
+        transform:  rotate(2deg);
+        transform: translate(250px, 50%);
+        rotate: (-260turn);
+    }    
+    to {
+        transform:  rotate(120px);
+    }    
+
+}    
+
+
+
 

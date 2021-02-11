@@ -9,19 +9,24 @@ let sprite1 =  document.querySelector("#Sprite1")
 let sprite2 =  document.querySelector("#Sprite2")
 let sprite3 =  document.querySelector("#Sprite3")
 
-let missedObject = document.querySelector('#miss')
 let addScore = document.querySelector('#score')
-let startGame = document.querySelector('.class')
+let gameOver = document.querySelector('#GameOver')
+let gamePieces = document.querySelectorAll('.GamePieces')
+// let startGame = document.querySelector('.class')
+
 
 /* Functions and Game Logic */
 
 
-// <div id="Sprite2">
-//     <img src="./images/Anna-mae.jpg" alt="AnnaMae" width="50" height="50">
-// </div>
-// <div id="Sprite3">
-//     <img src="./images/Marry-o.png" alt="Marry-o" width="50" height="50">
-// </div>
+
+function removeTargets() {
+   let gamePieces = document.querySelectorAll('.GamePieces')
+    for (let i=0; i < gamePieces.length; i++) {
+        gamePieces[i].remove()
+    }
+}
+// removeTargets()
+
 // *When I press start game, the game is reset and then the object float on the screen.
 function reset(event){
     myScore = 0
@@ -54,8 +59,18 @@ sprite1.addEventListener('mouseenter', handleMouseEvent)
 sprite2.addEventListener('mouseenter', handleMouseEvent)
 sprite3.addEventListener('mouseenter', handleMouseEvent)
 
+for(gamePiece of gamePieces) {
+    if (!gamePiece.classList.contains('disappear')) {
+        gameOver.getElementsByClassName.display = 'block'
+    }
+}
 
-//Start game
+
+//gamestate
+
+function setState(state) {
+    gameState = state;
+}
 
 
 
