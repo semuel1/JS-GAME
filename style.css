@@ -34,9 +34,10 @@
     top: 60px;
     left: 60px;
     background: purple;
-    width: 40px;
+    width: 60px;
     height: 70px;
     font-size: 4rem;
+    font-family: rage;
 }
 
 #Start {position: absolute;
@@ -71,7 +72,7 @@ font-family: 'rage';
 }
 
 #Sprite1 {
-    animation: Sprite 10s;
+    animation: Sprite 4s;
 
 }    
 
@@ -84,7 +85,7 @@ font-family: 'rage';
         transform:  rotate(-2deg);
         opacity: 0;
     }    
-    25% {
+    45% {
         opacity: 100%;
     }    
     50% {
