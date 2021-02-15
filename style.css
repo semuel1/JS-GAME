@@ -8,6 +8,17 @@
     display: none;
 }
 
+#lives {
+    position: absolute;
+    top: 60px;
+    left: 73vw;
+    background: purple;
+    width: 60px;
+    height: 70px;
+    font-size: 4rem;
+    font-family: rage;
+}
+
 .header h1 {
     position: absolute;
     height: 78%;
@@ -71,7 +82,7 @@ font-family: 'rage';
     height: 50px;   
 }
 
-#Sprite1 {
+#sprite1 {
     animation: Sprite 4s;
 
 }    
