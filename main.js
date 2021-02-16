@@ -3,6 +3,10 @@
 let myScore = 0
 let myLives = 3
 let sprite1Time;
+let sprite2Time;
+let sprite3Time;
+let sprite4Time;
+let sprite5Time;
 
 /* DOM References */
 
@@ -21,55 +25,82 @@ let lifeText = document.querySelector('#lives')
 
 /* Functions and Game Logic */
 function start() {
+    if(myScore === 5) {
+        window.alert('You Win!');
+    }
+
     const sprite1 = document.createElement('div')
     sprite1.id = "sprite1"
     sprite1.classList.add('GamePieces')
     const image1 = document.createElement('img')
-    image1.src = './images/Jel-Aye.jpg'
+    image1.src = './images/giphy.gif'
     sprite1.append(image1)
     document.querySelector('body').append(sprite1)
     sprite1.addEventListener('mouseenter', handleSlice)
     sprite1Time = setTimeout(function(){
         myLives -= 1;
         setLives();
-    }, 4000);
+    }, 10000);
 
     
-    // const sprite2 = document.createElement('div')
-    // sprite2.id = "Sprite2"
-    // sprite2.classList.add('GamePieces')
-    // const image2 = document.createElement('img')
-    // image2.src = './images/Anna-mae.jpg'
-    // sprite2.append(image2)
-    // document.querySelector('body').append(sprite2)
-    // sprite2.addEventListener('mouseenter', handleSlice)
+    const sprite2 = document.createElement('div')
+    sprite2.id = "Sprite2"
+    sprite2.classList.add('GamePieces')
+    const image2 = document.createElement('img')
+    image2.src = './images/Mew.gif'
+    sprite2.append(image2)
+    document.querySelector('body').append(sprite2)
+    sprite2.addEventListener('mouseenter', handleSlice)
+    sprite2Time = setTimeout(function(){
+        myLives -= 1;
+        setLives();
+    }, 10000);
     
-    // const sprite3 = document.createElement('div')
-    // sprite3.id = "Sprite3"
-    // sprite3.classList.add('GamePieces')
-    // const image3 = document.createElement('img')
-    // image3.src = './images/Marry-o.png'
-    // sprite3.append(image3)
-    // document.querySelector('body').append(sprite3)
-    // sprite3.addEventListener('mouseenter', handleSlice)
+    const sprite3 = document.createElement('div')
+    sprite3.id = "Sprite3"
+    sprite3.classList.add('GamePieces')
+    const image3 = document.createElement('img')
+    image3.src = './images/Jelly.gif'
+    sprite3.append(image3)
+    document.querySelector('body').append(sprite3)
+    sprite3.addEventListener('mouseenter', handleSlice)
+    sprite3Time = setTimeout(function(){
+        myLives -= 1;
+        setLives();
+    }, 10000);
     
-    // const sprite4 = document.createElement('div')
-    // sprite4.id = "Sprite4"
-    // sprite4.classList.add('GamePieces')
-    // const image4 = document.createElement('img')
-    // image4.src = './images/pngwing.com.png'
-    // sprite4.append(image4)
-    // document.querySelector('body').append(sprite4)
-    // sprite4.addEventListener('mouseenter', handleSlice)
+    const sprite4 = document.createElement('div')
+    sprite4.id = "Sprite4"
+    sprite4.classList.add('GamePieces')
+    const image4 = document.createElement('img')
+    image4.src = './images/pngwing.com.png'
+    sprite4.append(image4)
+    document.querySelector('body').append(sprite4)
+    sprite4.addEventListener('mouseenter', handleSlice)
+      sprite4Time = setTimeout(function(){
+        myLives -= 1;
+        setLives();
+    }, 10000);
     
-    // const sprite5 = document.createElement('div')
-    // sprite5.id = "Sprite5"
-    // sprite5.classList.add('GamePieces')
-    // const image5 = document.createElement('img')
-    // image5.src = './images/Kalari.png'
-    // sprite5.append(image5)
-    // document.querySelector('body').append(sprite5)
-    // sprite5.addEventListener('mouseenter', handleSlice)
+    const sprite5 = document.createElement('div')
+    sprite5.id = "Sprite5"
+    sprite5.classList.add('GamePieces')
+    const image5 = document.createElement('img')
+    image5.src = './images/Kalari.png'
+    sprite5.append(image5)
+    document.querySelector('body').append(sprite5)
+    sprite5.addEventListener('mouseenter', handleSlice)
+    sprite5Time = setTimeout(function(){
+         if(myLives > 0) {
+            myLives--
+        }
+        else {
+            window.alert ('GameLose');
+        }
+
+        setLives();
+
+    }, 10000);
     
     setLives()
 }
@@ -98,14 +129,17 @@ function reset(event){
 // *When you slice 5 objects, game is won.
 function checkWin() {
     if (myScore === 5) {
-        alert('You Win!');
-    }
-
-function checkLose()
-    if (myLives === 0 ) {
-        alert ('GameOver');
+        window.alert('You Win!');
     }
 }
+
+function checkLose(myLives) {
+    if (myLives === 0 ) {
+        window.alert ('GameLose');
+
+    }
+}
+
 
 // *Counter will indicate point system.
 // *When I move my cursor through an object, the object should slice in half, gaining me a single point.
@@ -114,8 +148,11 @@ function handleSlice(event) {
     scoreText.innerText = myScore;
 
     event.target.classList.add('disappear');
-    console.log(event.target.id + 'Time')
-    clearTimeout(event.target.id + 'Time');
+    clearTimeout(sprite1Time);
+    clearTimeout(sprite2Time);
+    clearTimeout(sprite3Time)
+    clearTimeout(sprite4Time)
+    clearTimeout(sprite5Time)
 }
 
 // *When I slice the object, a new object will appear for me to slice.
@@ -140,10 +177,6 @@ for(gamePiece of gamePieces) {
 
 
 //gamestate
-
-function setState(state) {
-    gameState = state;
-}
 
 
 

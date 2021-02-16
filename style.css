@@ -78,12 +78,12 @@ font-family: 'rage';
 }
 
 .GamePieces img {
-    width: 50px;
-    height: 50px;   
+    width: 60px;
+    height: 60px;   
 }
 
 #sprite1 {
-    animation: Sprite 4s;
+    animation: Sprite 10s;
 
 }    
 
@@ -96,7 +96,7 @@ font-family: 'rage';
         transform:  rotate(-2deg);
         opacity: 0;
     }    
-    45% {
+    25% {
         opacity: 100%;
     }    
     50% {
@@ -119,16 +119,22 @@ font-family: 'rage';
 
 @keyframes Annamae {
     from {
-        transform:  translate(344px);
+        transform:  rotate(-50deg);
         opacity: 0;
     }    
-    25% {
+    10% {
         opacity: 100%;
+    }   
+    25% {
+        transform:  rotate(100deg);
+    }   
+    40% {
+        transform:  rotate(50deg);
     }    
-    50% {
-        transform:  rotate(150deg);
-    }    
-    75% {
+    60% {
+        transform:  rotate(100deg);
+    }  
+    90% {
         transform:  rotate(2deg);
         transform: translate(50px, 50%);
         rotate: (-260turn);
@@ -145,18 +151,24 @@ font-family: 'rage';
 
 @keyframes Marry-o {
     from {
-        transform:  translate(32px);
+        transform:  rotate(-100deg);
         opacity: 0;
     }    
-    25% {
+    10% {
         opacity: 100%;
+    }   
+    25% {
+        transform:  rotate(100deg);
+    }   
+    40% {
+        transform:  rotate(50deg);
     }    
-    50% {
-        transform:  rotate(67deg);
-    }    
-    75% {
+    60% {
+        transform:  rotate(100deg);
+    }  
+    90% {
         transform:  rotate(2deg);
-        transform: translate(250px, 50%);
+        transform: translate(50px, 50%);
         rotate: (-260turn);
     }    
     to {
@@ -171,26 +183,31 @@ font-family: 'rage';
 
 @keyframes Fey {
     from {
-        transform:  translate(100px);
+        transform:  rotate(-150deg);
         opacity: 0;
     }    
-    25% {
+    10% {
         opacity: 100%;
+    }   
+    25% {
+        transform:  rotate(100deg);
+    }   
+    40% {
+        transform:  rotate(50deg);
     }    
-    50% {
-        transform:  rotate(86deg);
-    }    
-    75% {
+    60% {
+        transform:  rotate(100deg);
+    }  
+    90% {
         transform:  rotate(2deg);
-        transform: translate(250px, 50%);
-        rotate: (-170turn);
+        transform: translate(50px, 50%);
+        rotate: (-260turn);
     }    
     to {
-        transform:  rotate(150px);
+        transform:  rotate(120px);
     }    
 
-}    
-
+}  
 
 #Sprite5 {
     animation: Kalari 10s;
@@ -198,27 +215,31 @@ font-family: 'rage';
 
 @keyframes Kalari {
     from {
-        transform:  translate(32px);
+        transform:  rotate(-200deg);
         opacity: 0;
     }    
-    25% {
+    10% {
         opacity: 100%;
+    }   
+    25% {
+        transform:  rotate(100deg);
+    }   
+    70% {
+        transform:  rotate(90deg);
     }    
-    50% {
-        transform:  rotate(67deg);
-    }    
-    75% {
+    80% {
+        transform:  rotate(150deg);
+    }  
+    90% {
         transform:  rotate(2deg);
-        transform: translate(250px, 50%);
+        transform: translate(50px, 50%);
         rotate: (-260turn);
     }    
     to {
         transform:  rotate(120px);
     }    
 
-}    
-
-
+}  
 
 
 
